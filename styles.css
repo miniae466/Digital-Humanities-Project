@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+header {
+    background-color: #800000;
+    color: white;
+    padding: 20px;
+}
+
+
+.map-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+    max-width: 90%;
+    border: 5px solid #800000;
+    line-height: 0;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.marker {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #800000;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #d4af37;
+    z-index: 100;
+    font-size: 14px;
+}
+
+
+
+.m1  { top: 67%; left: 24%; } 
+.m2  { top: 67%; left: 30%; } 
+.m3  { top: 43%; left: 31%; } 
+.m4  { top: 35%; left: 26%; } 
+.m5  { top: 50%; left: 29%; } 
+.m6  { top: 53%; left: 30%; } 
+.m7  { top: 14%; left: 26%; } 
+.m8  { top: 45%; left: 39%; } 
+.m9  { top: 76%; left: 32%; } 
+.m10 { top: 81%; left: 32%; } 
+
+.marker:hover {
+    background-color: #d4af37;
+    color: #800000;
+    transform: scale(1.1);
+}
+
+
+.marker:hover {
+    background-color: #d4af37; 
+    color: #800000;
+    transform: scale(1.2); 
+    z-index: 1001; 
+}
+
+
+.marker:hover::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: 130%; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+    background-color: #800000; 
+    color: #d4af37; 
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 2px solid #d4af37; 
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    
+}
+
+
+
+.page-detail { background-color: #fdfaf3; }
+
+.container { 
+    max-width: 800px; 
+    margin: 30px auto; 
+    padding: 20px; 
+    background: white; 
+    border: 1px solid #d4af37; 
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-back { 
+    display: inline-block; 
+    margin-bottom: 20px; 
+    color: #800000; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border: 2px solid #800000; 
+    padding: 5px 15px; 
+    border-radius: 5px; 
+    transition: 0.3s;
+}
+
+.btn-back:hover { background-color: #800000; color: white; }
+
+.img-wrapper { text-align: center; margin: 20px 0; }
+.epigrafe-img { width: 50%; height: auto; border: 2px solid #800000; }
+
+.latin { 
+    font-style: italic; 
+    background: #f9f9f9; 
+    padding: 15px; 
+    border-left: 4px solid #800000; 
+    margin: 20px 0; 
+}
+
+.lang-section { border-top: 1px solid #eee; padding-top: 15px; margin-top: 15px; }
+
+.lang-section a { color: #800000; text-decoration: none; font-weight: bold; }
+.lang-section a:hover { color: #d4af37 !important; }
+
+
+.nav-links {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 3px solid #d4af37;
+    background-color: transparent;
+    width: auto;
+}
+
+.nav-btn {
+
+    color: #800000 !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+
+}
+
+.nav-btn:hover { color: #d4af37 !important; }
+
+.nav-placeholder { width: 1px; }
